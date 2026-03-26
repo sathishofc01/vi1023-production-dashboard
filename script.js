@@ -10,6 +10,11 @@ alert("Wrong Password");
 }
 function calculateProduction() {
 
+let efficiency = (totalActual / totalTarget) * 100;
+
+document.getElementById("totalEfficiency").innerText =
+efficiency.toFixed(2) + "%";
+
 let morningTarget = Number(document.getElementById("morningTarget").value) || 0;
 let morningActual = Number(document.getElementById("morningActual").value) || 0;
 let morningDowntime = Number(document.getElementById("morningDowntime").value) || 0;
