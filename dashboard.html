@@ -1,25 +1,120 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>VIS Dashboard</title>
+<title>VI1023 Production Dashboard</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="styles.css">
+
+<style>
+select{
+padding:10px;
+margin:10px;
+width:200px;
+}
+
+.ok{
+background:green;
+color:white;
+margin:5px;
+}
+
+.issue{
+background:red;
+color:white;
+margin:5px;
+}
+
+.submit{
+background:#007bff;
+color:white;
+padding:12px;
+margin:20px;
+width:200px;
+}
+</style>
+
 </head>
+
 <body>
 
-<h1>VIS Production Dashboard</h1>
+<h2>Company ID : VI1023</h2>
+
+<label>Supervisor</label><br>
+<select>
+<option>Select Supervisor</option>
+<option>Supervisor 1</option>
+<option>Supervisor 2</option>
+<option>Supervisor 3</option>
+</select>
+
+<br>
+
+<label>Shift</label><br>
+<select>
+<option>Shift A</option>
+<option>Shift B</option>
+<option>Shift C</option>
+</select>
+
+<h3>Line-1 Conveyors</h3>
 
 <div class="grid">
-<div class="card">CV-01</div>
-<div class="card">CV-02</div>
-<div class="card">CV-03</div>
-<div class="card">CV-04</div>
-<div class="card">CV-05</div>
-<div class="card">CV-06</div>
-<div class="card">CV-07</div>
-<div class="card">CV-08</div>
-<div class="card">CV-09</div>
-<div class="card">CV-10</div>
+
+<div class="card">CV-01<br>
+<button class="ok">OK</button>
+<button class="issue">Issue</button>
 </div>
+
+<div class="card">CV-02<br>
+<button class="ok">OK</button>
+<button class="issue">Issue</button>
+</div>
+
+<div class="card">CV-03<br>
+<button class="ok">OK</button>
+<button class="issue">Issue</button>
+</div>
+
+<div class="card">CV-04<br>
+<button class="ok">OK</button>
+<button class="issue">Issue</button>
+</div>
+
+<div class="card">CV-05<br>
+<button class="ok">OK</button>
+<button class="issue">Issue</button>
+</div>
+
+<div class="card">CV-06<br>
+<button class="ok">OK</button>
+<button class="issue">Issue</button>
+</div>
+
+<div class="card">CV-07<br>
+<button class="ok">OK</button>
+<button class="issue">Issue</button>
+</div>
+
+<div class="card">CV-08<br>
+<button class="ok">OK</button>
+<button class="issue">Issue</button>
+</div>
+
+<div class="card">CV-09<br>
+<button class="ok">OK</button>
+<button class="issue">Issue</button>
+</div>
+
+<div class="card">CV-10<br>
+<button class="ok">OK</button>
+<button class="issue">Issue</button>
+</div>
+
+</div>
+
+<center>
+<button class="submit">Submit</button>
+</center>
 
 </body>
 </html>
